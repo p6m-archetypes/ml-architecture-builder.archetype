@@ -1,0 +1,13 @@
+---
+description: "ML Architecture Builder archetype"
+authors: ["Jimmie Fulton>"]
+languages: []
+frameworks: []
+tags: []
+
+requires:
+  archetect: "2.0.0-ALPHA.10"
+
+components:
+  org-prompts: git@github.com:p6m-dev/org-prompts.archetype.git
+  python-project-scaffolding: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
