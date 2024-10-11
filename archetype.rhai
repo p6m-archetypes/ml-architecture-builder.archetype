@@ -39,7 +39,7 @@ fn render_app_set(apps, archetype_name, suffix, context) {
     let archetype = Archetype(archetype_name);
     let app_context = #{
       "org-name": context["org-name"],
-      "venture-name": context["venture-name"],
+      "solution-name": context["solution-name"],
       "project-suffix": suffix,
       "transport": "FastAPI",
       "features": [],
@@ -47,7 +47,7 @@ fn render_app_set(apps, archetype_name, suffix, context) {
       "author_full": context["author_full"],
     };
     for app in apps {
-      let destination_directory = render("{{ org-name }}-{{ venture-name }}", context);
+      let destination_directory = render("{{ org-name }}-{{ solution-name }}", context);
       log(Info, `Rendering ${pascal_case(app)} ${suffix}`);
       archetype.render(
         destination_directory,
