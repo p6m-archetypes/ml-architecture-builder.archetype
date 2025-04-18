@@ -7,7 +7,7 @@ This is an [Archetect](https://archetect.github.io/) archetype, designed for gen
 To generate content from this Archetype, copy and execute the following command:
 
 ```sh
-  archetect render git@github.com:p6m-dev/ml-architecture-builder.archetype.git
+  archetect render git@github.com:p6m-archetypes/ml-architecture-builder.archetype.git
 ```
 
 ## Archetype Layout
